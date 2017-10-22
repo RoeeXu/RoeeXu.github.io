@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://roeexu.com">
   <title>linux下VPS搭建和使用 | Above</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="简介科学上网越来越难。 本文介绍如何科学上网的一种方法。">
-<meta name="keywords" content="svn">
+  <meta name="description" content="INTRODUCTIONHow to surf the internet without blocking by the GREAT FIREWALL? I wanna to tell you a effective way.">
+<meta name="keywords" content="vps">
 <meta property="og:type" content="article">
 <meta property="og:title" content="linux下VPS搭建和使用">
 <meta property="og:url" content="http://roeexu.com/2017/10/23/linux下VPS搭建和使用/index.html">
 <meta property="og:site_name" content="Above">
-<meta property="og:description" content="简介科学上网越来越难。 本文介绍如何科学上网的一种方法。">
-<meta property="og:updated_time" content="2017-10-22T11:18:27.509Z">
+<meta property="og:description" content="INTRODUCTIONHow to surf the internet without blocking by the GREAT FIREWALL? I wanna to tell you a effective way.">
+<meta property="og:updated_time" content="2017-10-22T13:39:53.542Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux下VPS搭建和使用">
-<meta name="twitter:description" content="简介科学上网越来越难。 本文介绍如何科学上网的一种方法。">
+<meta name="twitter:description" content="INTRODUCTIONHow to surf the internet without blocking by the GREAT FIREWALL? I wanna to tell you a effective way.">
   
   
     <link rel="icon" href="/favicon.png">
@@ -160,11 +160,27 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>科学上网越来越难。</p>
-<p>本文介绍如何科学上网的一种方法。</p>
+        <h2 id="INTRODUCTION"><a href="#INTRODUCTION" class="headerlink" title="INTRODUCTION"></a>INTRODUCTION</h2><p>How to surf the internet without blocking by the GREAT FIREWALL?</p>
+<p>I wanna to tell you a effective way.</p>
 <a id="more"></a>
-<h2 id="购买VPS"><a href="#购买VPS" class="headerlink" title="购买VPS"></a>购买VPS</h2><p><a href="https://bwh1.net/" target="_blank" rel="external">https://bwh1.net/</a><br>推荐用paypal，可以和国内银行卡绑定。<br>购买完成后，VPS主机地址信息会发送到填写的邮箱中。</p>
-<h2 id="配置SS"><a href="#配置SS" class="headerlink" title="配置SS"></a>配置SS</h2><p>登陆<br><a href="/code/shadowsocks.sh">shadowsocks.sh</a></p>
+<h2 id="BUY-VPS"><a href="#BUY-VPS" class="headerlink" title="BUY VPS"></a>BUY VPS</h2><p><a href="https://bwh1.net/" target="_blank" rel="external">https://bwh1.net/</a><br>I prefer to use paypal</p>
+<h2 id="SETTING-SS"><a href="#SETTING-SS" class="headerlink" title="SETTING SS"></a>SETTING SS</h2><p>log in your VPS, download and run:<br><a href="/code/shadowsocks.sh">shadowsocks.sh</a><br>set your own config<br>until the code complete setting<br>write down the infomation of shaowsocks</p>
+<h2 id="SHADOWSOCKS"><a href="#SHADOWSOCKS" class="headerlink" title="SHADOWSOCKS"></a>SHADOWSOCKS</h2><p>write you config doc</p>
+<pre><code>{
+    &quot;server&quot;:&quot;0.0.0.0&quot;, # your ip address
+    &quot;server_port&quot;:XXXX, # your passwd
+    &quot;local_address&quot;:&quot;127.0.0.1&quot;,
+    &quot;local_port&quot;:1080,
+    &quot;password&quot;:&quot;XX&quot;, # your passwd
+    &quot;timeout&quot;:300,
+    &quot;method&quot;:&quot;XX-XX&quot;, # your crypt method
+    &quot;fast_open&quot;:false
+}
+</code></pre><p>save as shadowsocks.json<br>run:</p>
+<pre><code>sslocal -c shadowsocks.json
+</code></pre><p>to connect to your VPS</p>
+<h2 id="CHROME"><a href="#CHROME" class="headerlink" title="CHROME"></a>CHROME</h2><p>download the latest chrome<br>download <a href="/code/SwitchyOmega.crx">SwichyOmega</a><br>apply the setting <a href="/code/OmegaOptions.bak">OmegaOptions</a></p>
+<p>Now you can use your own VPS to surf the internet freedomly.</p>
 
       
 
@@ -178,7 +194,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">svn</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vps</a>
         		</li>
       		
 		</ul>
@@ -367,6 +383,10 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">cnn</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vps</a>
               </li>
              
               <li class="article-tag-list-item">
